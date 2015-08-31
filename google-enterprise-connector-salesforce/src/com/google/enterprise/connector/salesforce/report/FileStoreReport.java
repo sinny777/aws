@@ -79,6 +79,8 @@ public class FileStoreReport extends HttpServlet {
 		day = req.getParameter("day");
 
 		action = req.getParameter("form_action");
+		LOGGER.info("Form Action : " + action);
+
 		if (action != null && action.equals("GET")) {
 			fetchData(out);
 		}
@@ -93,6 +95,8 @@ public class FileStoreReport extends HttpServlet {
 	}
 
 	private void fetchData(PrintWriter out) throws IOException {
+		LOGGER.info("Inside fetchData");
+		LOGGER.info("Values : " + year + " / " + month + " / " + day);
 		out.println("<html><body>");
 		out.println("<h1 align='center'>File Store Report</h1>");
 		out.println("<table align='center' border='1'><tr><th>Date</th><th>File Name</th><th>Number of Cases</th><th>Case Number(s)</th></tr>");
@@ -101,15 +105,20 @@ public class FileStoreReport extends HttpServlet {
 		out.println("<h3 align='center'>Total Number of Cases Indexed : "
 				+ finalCaseSet.size() + "</h3>");
 		out.println("</html></body>");
+		LOGGER.info("fetchData completed");
 	}
 
 	private void deleteData(PrintWriter out) throws IOException {
+		LOGGER.info("Inside deleteData");
+		LOGGER.info("Values : " + year + " / " + month + " / " + day);
 		deleteFiles(FileStore.fileStoreDirectory, out);
 		out.println("<html><body>");
 		out.println("<h1 align='center'>Data Deleted Successfully for : "
 				+ year + "/" + month + "/" + day + " </h1>");
 		out.println();
 		out.println("</html></body>");
+
+		LOGGER.info("deleteData completed");
 	}
 
 	public static Set<String> readCaseNumberFromFile(String fileName)
