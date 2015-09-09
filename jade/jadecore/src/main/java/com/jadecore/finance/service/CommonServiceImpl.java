@@ -6,15 +6,15 @@
  *
  *******************************************************************************/
 
-package com.jadecore.aws.service;
+package com.jadecore.finance.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.jadecore.aws.abstraction.repository.CommonRepository;
-import com.jadecore.aws.abstraction.service.CommonService;
+import com.jadecore.finance.abstraction.repository.CommonRepository;
+import com.jadecore.finance.abstraction.service.CommonService;
 
 /*
  * @author gurvinder.singh

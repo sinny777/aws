@@ -10,7 +10,7 @@
         </description>
 
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-		<class>com.jadecore.aws.abstraction.model.MyUser</class>
+		<class>com.jadecore.finance.abstraction.model.MyUser</class>
 		
 		<properties>
 			<property name="javax.persistence.jdbc.driver" 	value="org.h2.Driver" />

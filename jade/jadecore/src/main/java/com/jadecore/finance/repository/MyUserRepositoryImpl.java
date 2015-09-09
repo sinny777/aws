@@ -6,7 +6,7 @@
  *
  *******************************************************************************/
 
-package com.jadecore.aws.repository;
+package com.jadecore.finance.repository;
 
 import java.util.List;
 
@@ -25,10 +25,10 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.jadecore.aws.abstraction.exception.BadRequestException;
-import com.jadecore.aws.abstraction.exception.NotFoundException;
-import com.jadecore.aws.abstraction.model.MyUser;
-import com.jadecore.aws.abstraction.repository.MyUserRepository;
+import com.jadecore.finance.abstraction.exception.BadRequestException;
+import com.jadecore.finance.abstraction.exception.NotFoundException;
+import com.jadecore.finance.abstraction.model.MyUser;
+import com.jadecore.finance.abstraction.repository.MyUserRepository;
 
 /*
  * @author gurvinder.singh

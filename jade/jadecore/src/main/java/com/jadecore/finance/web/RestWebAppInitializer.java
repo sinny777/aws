@@ -5,7 +5,7 @@
  *  All Rights Reserved. All content is proprietary and confidential.
  *
  *******************************************************************************/
-package com.jadecore.aws.web;
+package com.jadecore.finance.web;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;

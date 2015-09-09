@@ -6,7 +6,7 @@
  *
  *******************************************************************************/
 
-package com.jadecore.aws.service;
+package com.jadecore.finance.service;
 
 import java.util.List;
 
@@ -15,11 +15,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.jadecore.aws.abstraction.exception.BadRequestException;
-import com.jadecore.aws.abstraction.exception.NotFoundException;
-import com.jadecore.aws.abstraction.model.MyUser;
-import com.jadecore.aws.abstraction.repository.MyUserRepository;
-import com.jadecore.aws.abstraction.service.MyUserService;
+import com.jadecore.finance.abstraction.exception.BadRequestException;
+import com.jadecore.finance.abstraction.exception.NotFoundException;
+import com.jadecore.finance.abstraction.model.MyUser;
+import com.jadecore.finance.abstraction.repository.MyUserRepository;
+import com.jadecore.finance.abstraction.service.MyUserService;
 
 /*
  * @author gurvinder.singh

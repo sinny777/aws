@@ -6,14 +6,14 @@
  *
  *******************************************************************************/
 
-package com.jadecore.aws.abstraction.repository;
+package com.jadecore.finance.abstraction.service;
 
 /*
  * @author gurvinder.singh
  * @Date 24-Apr-2015
  */
 
-public interface CommonRepository {
+public interface CommonService {
 
 	String helloWorld();
 

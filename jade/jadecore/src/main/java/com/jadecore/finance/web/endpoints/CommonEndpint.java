@@ -5,14 +5,14 @@
  *  All Rights Reserved. All content is proprietary and confidential.
  *
  *******************************************************************************/
-package com.jadecore.aws.web.endpoints;
+package com.jadecore.finance.web.endpoints;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.jadecore.aws.abstraction.service.CommonService;
+import com.jadecore.finance.abstraction.service.CommonService;
 
 @RestController
 @RequestMapping(value = "/common")

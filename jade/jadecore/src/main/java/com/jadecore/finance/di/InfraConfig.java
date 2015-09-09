@@ -5,7 +5,7 @@
  *  All Rights Reserved. All content is proprietary and confidential.
  *
  *******************************************************************************/
-package com.jadecore.aws.di;
+package com.jadecore.finance.di;
 
 import java.util.Timer;
 

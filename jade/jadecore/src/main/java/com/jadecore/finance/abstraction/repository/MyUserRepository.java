@@ -6,13 +6,13 @@
  *
  *******************************************************************************/
 
-package com.jadecore.aws.abstraction.repository;
+package com.jadecore.finance.abstraction.repository;
 
 import java.util.List;
 
-import com.jadecore.aws.abstraction.exception.BadRequestException;
-import com.jadecore.aws.abstraction.exception.NotFoundException;
-import com.jadecore.aws.abstraction.model.MyUser;
+import com.jadecore.finance.abstraction.exception.BadRequestException;
+import com.jadecore.finance.abstraction.exception.NotFoundException;
+import com.jadecore.finance.abstraction.model.MyUser;
 
 /*
  * @author gurvinder.singh

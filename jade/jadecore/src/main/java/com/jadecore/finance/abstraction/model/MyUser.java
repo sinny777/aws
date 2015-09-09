@@ -6,7 +6,7 @@
  *
  *******************************************************************************/
 
-package com.jadecore.aws.abstraction.model;
+package com.jadecore.finance.abstraction.model;
 
 import java.io.Serializable;
 

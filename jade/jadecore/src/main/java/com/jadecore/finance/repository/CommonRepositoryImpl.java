@@ -6,13 +6,13 @@
  *
  *******************************************************************************/
 
-package com.jadecore.aws.repository;
+package com.jadecore.finance.repository;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
-import com.jadecore.aws.abstraction.repository.CommonRepository;
+import com.jadecore.finance.abstraction.repository.CommonRepository;
 
 /*
  * @author gurvinder.singh

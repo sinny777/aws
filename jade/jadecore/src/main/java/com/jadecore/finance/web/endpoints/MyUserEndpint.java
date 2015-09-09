@@ -5,7 +5,7 @@
  *  All Rights Reserved. All content is proprietary and confidential.
  *
  *******************************************************************************/
-package com.jadecore.aws.web.endpoints;
+package com.jadecore.finance.web.endpoints;
 
 import java.util.List;
 
@@ -18,8 +18,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.jadecore.aws.abstraction.model.MyUser;
-import com.jadecore.aws.abstraction.service.MyUserService;
+import com.jadecore.finance.abstraction.model.MyUser;
+import com.jadecore.finance.abstraction.service.MyUserService;
 
 @RestController
 @RequestMapping(value = "/user")
