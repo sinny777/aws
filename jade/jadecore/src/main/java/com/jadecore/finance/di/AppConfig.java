@@ -15,8 +15,8 @@ import org.springframework.integration.config.EnableIntegration;
 
 @Configuration
 @EnableIntegration
-@ComponentScan({ "com.jadecore.aws.reposirory", "com.jadecore.aws.service",
-		"com.jadecore.aws.web" })
+@ComponentScan({ "com.jadecore.finance.reposirory",
+		"com.jadecore.finance.service", "com.jadecore.finance.web" })
 @Import({ DatabaseConfig.class })
 @EnableAspectJAutoProxy
 public class AppConfig {

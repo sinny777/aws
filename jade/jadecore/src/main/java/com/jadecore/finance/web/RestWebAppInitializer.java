@@ -24,7 +24,7 @@ public class RestWebAppInitializer implements WebApplicationInitializer {
 
 	private static final String DISPATCHER_SERVLET_NAME = "dispatcher";
 
-	private static final String[] SCAN_PATHS = new String[] { "com.jadecore.aws" };
+	private static final String[] SCAN_PATHS = new String[] { "com.jadecore.finance" };
 
 	public void onStartup(ServletContext servletContext)
 			throws ServletException {
