@@ -19,6 +19,8 @@ import javax.persistence.criteria.CriteriaQuery;
 import org.eclipse.persistence.config.CacheUsage;
 import org.eclipse.persistence.config.HintValues;
 import org.eclipse.persistence.config.QueryHints;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -36,6 +38,9 @@ import com.jadecore.aws.abstraction.repository.MyUserRepository;
 @Transactional(value = "transactionManager", propagation = Propagation.REQUIRED, readOnly = false)
 @Repository
 public class MyUserRepositoryImpl implements MyUserRepository {
+
+	private static final Logger LOGGER = LoggerFactory
+			.getLogger(MyUserRepositoryImpl.class);
 
 	@PersistenceContext(unitName = "entitymanageFactory")
 	private EntityManager entityManager;

@@ -10,6 +10,8 @@ package com.jadecore.aws.service;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,6 +29,9 @@ import com.jadecore.aws.abstraction.service.MyUserService;
 @Service
 public class MyUserServiceImpl implements MyUserService {
 
+	private static final Logger LOGGER = LoggerFactory
+			.getLogger(MyUserServiceImpl.class);
+
 	private final MyUserRepository userRespository;
 
 	@Autowired
@@ -36,21 +41,25 @@ public class MyUserServiceImpl implements MyUserService {
 
 	@Override
 	public List<MyUser> list() throws NotFoundException {
+		LOGGER.info("IN MyUserServiceImpl.list >>>>>>>>>>>>>>>");
 		return userRespository.list();
 	}
 
 	@Override
 	public MyUser get(Long id) throws NotFoundException {
+		LOGGER.info("IN MyUserServiceImpl.get User for Id: " + id);
 		return userRespository.get(id);
 	}
 
 	@Override
 	public MyUser save(MyUser myUser) throws BadRequestException {
+		LOGGER.info("IN MyUserServiceImpl.save: " + myUser);
 		return userRespository.save(myUser);
 	}
 
 	@Override
 	public Boolean deleteMyUser(Long id) throws BadRequestException {
+		LOGGER.info("IN MyUserServiceImpl.deleteUser for Id: " + id);
 		return userRespository.deleteMyUser(id);
 	}
 

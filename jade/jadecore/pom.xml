@@ -7,14 +7,17 @@
   </parent>
   
   <artifactId>jadecore</artifactId>
+  <packaging>war</packaging>
   
   <properties>
 		<jdk.version>1.7</jdk.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<h2.version>1.4.188</h2.version>
+		<slf4j.version>1.7.7</slf4j.version>
 	</properties>
 
 	<build>
-		<finalName>core-${buildNumber}</finalName>
+		<finalName>jadecore</finalName>
 		<defaultGoal>clean compile package</defaultGoal>
 		<!-- <sourceDirectory>src</sourceDirectory> -->
 		<resources>
@@ -137,6 +140,23 @@
 			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+	        <groupId>org.slf4j</groupId>
+	        <artifactId>slf4j-api</artifactId>
+	        <version>${slf4j.version}</version>
+	    </dependency>
+	
+	    <dependency>
+	        <groupId>org.slf4j</groupId>
+	        <artifactId>slf4j-simple</artifactId>
+	        <version>1.6.4</version>
+	    </dependency>
+	
+	    <dependency>
+	        <groupId>org.slf4j</groupId>
+	        <artifactId>slf4j-log4j12</artifactId>
+	        <version>${slf4j.version}</version>
+	    </dependency>
 
 		<dependency>
 			<groupId>org.apache.geronimo.specs</groupId>
@@ -307,5 +327,4 @@
 
 	</dependencies>
   
-	<packaging>war</packaging>
 </project>

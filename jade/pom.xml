@@ -19,7 +19,6 @@
 		<shadedClassifierName>${env}</shadedClassifierName>
 		<spring.version>4.0.3.RELEASE</spring.version>
 		<javaee-web-api.version>6.0</javaee-web-api.version>
-		<slf4j.version>1.7.7</slf4j.version>
 
 		<!-- Test Dependendcies -->
 		<jmockit.version>1.8</jmockit.version>
@@ -104,7 +103,7 @@
 					<password></password>
 				</configuration>
 
-				<executions>
+				<!-- <executions>
 					<execution>
 						<id>create-schema-poc</id>
 						<phase>test-compile</phase>
@@ -114,13 +113,14 @@
 						</goals>
 						<configuration>
 							<autocommit>true</autocommit>
-							<url>jdbc:h2:target/db/poc;MODE=mysql</url>
+							<url>jdbc:h2:tcp://localhost//~/shared/poc_dev;auto_server=true</url>
+							<url>jdbc:h2:~/h2/poc_dev;auto_server=true</url>
 							<srcFiles>
 								<srcFile>src/test/resources/database/h2InitializePOC.sql</srcFile>
 							</srcFiles>
 						</configuration>
 					</execution>
-				</executions>
+				</executions> -->
 			</plugin>
 			<!-- <plugin>
 				<groupId>org.jacoco</groupId>
@@ -172,7 +172,6 @@
 									<directory>${basedir}/src/main/resources/environment/${env}</directory>
 									<filtering>false</filtering>
 									<includes>
-										<include>intradokeystore.jks</include>
 										<include>**/*.jks</include>
 										<include>**/*.properties</include>
 									</includes>
