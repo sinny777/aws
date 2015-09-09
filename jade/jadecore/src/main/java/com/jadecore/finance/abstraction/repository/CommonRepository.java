@@ -10,7 +10,7 @@ package com.jadecore.finance.abstraction.repository;
 
 /*
  * @author gurvinder.singh
- * @Date 24-Apr-2015
+ * @Date 09-Sep-2015
  */
 
 public interface CommonRepository {
